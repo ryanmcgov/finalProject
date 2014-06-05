@@ -1,0 +1,83 @@
+App Name: "What's Next"
+
+Description:
+	This app is designed to help a junior or beginner web developer navigate the vast amount of tools one can use to build a webapp.  You enter you ideas and this app will point you in you next direction based on what you select.
+
+Technology:
+	-Javascript
+		-jQuery
+		-angularJS
+			-angular bootstrap
+	-HTML5
+	-SASS
+	-Twitter Bootstrap
+	-Firebase
+
+Features
+	-Responsive design
+	-User page/login
+		-Saved previous app decisions
+		-add/remove previous builds
+	-Example tools
+
+Stories
+	-User Login
+		-Size: Large
+		-Value:
+			An extremely valuable feature needed in order for the user to save and revisit the choices they have made for their app. 
+		-Assumptions:
+			-A new user will have an already established account that can be used to sign in.
+			-Use of Firebase for this task.
+		-Acceptance:
+			-Full login with the selected user account
+	-User Page
+		-Size: Large
+		-Value:
+			Having successfully logged in to their account, a user will be able to view existing app layouts, add new ones, and delete old or discarded projects.
+		-Assumptions:
+			-Will use CRUD to access the database where the user info is held to perform these actions.
+		-Acceptance:
+			-The user will be able to view, add, or delete.
+	-Main Page
+		-Size: Very Large
+		-Value:
+			This is the heart of the app.  This main page will display the sequence of choices that the user will go through in order to establish a foundation for their app.
+		-Assumptions:
+			-The user will have at least some basic idea of the route they want to take creating their app.
+			-User selections will influence the resulting movement through out the app.
+			-angulerJS will be used in order to create the app and navigate through it.
+		-Acceptance:
+			-The user choices influence varying outcomes.
+			-Each choice will open up the next set of choices.
+			-The final set of choices will be displayed at the end.
+			-A user can save their choices.
+
+Future Development
+	-In addition to viewing, adding, and deleting user choices, they can update them as well on their user page.
+	-The ability to share your established foundation with other users.
+		-They can also discuss these with each other.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
