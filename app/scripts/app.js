@@ -1,11 +1,13 @@
 'use strict';
 
 angular
-  .module('finalProjectApp', [
+  .module('whatNext', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'ui.bootstrap',
+    'whatNext.directives'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -17,3 +19,5 @@ angular
         redirectTo: '/'
       });
   });
+
+angular.module('whatNext.directives', []);
