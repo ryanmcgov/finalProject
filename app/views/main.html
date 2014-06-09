@@ -3,6 +3,8 @@
     <li class="active"><a ng-href="#">Home</a></li>
     <li><a ng-href="#">About</a></li>
     <li><a ng-href="#">Contact</a></li>
+    <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#" ng-click="logout()">Log Out</a></li>
+    <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
   </ul>
   <h3 class="text-muted">What Next</h3>
 </div>
@@ -11,7 +13,9 @@
   <h1>What Next?</h1>
   <p class="lead">
     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
+    Let's get you started on your way to building a web application!
   </p>
-  <p><a class="btn btn-sm btn-success" ng-href="#">Let's get started! <span class="glyphicon glyphicon-ok"></span></a></p>
+  <p><a class="btn btn-sm" ng-href="#">Let's get started! <span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
+
+<displays></displays>

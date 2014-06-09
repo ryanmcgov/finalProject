@@ -1,4 +1,8 @@
 angular.module('whatNext.directives')
-	.directive('', function() {
+	.directive('displays', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'views/displaysDirective.html'
+		};
 
 	});

@@ -55,27 +55,30 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
+    border: 2px solid #A4A4A4;
     font-color: #A4A4A4;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 700px;
+    border-bottom: 0;
+    background: #0B173B;
+    h1 {
+        color: #A4A4A4;
+    }
+    p {
+        color: #A4A4A4;
+    }
 }
 
 .jumbotron .btn {
+    background-color: #f4730d;
     font-size: 21px;
-    padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-}
-
-.marketing p + h4 {
-    margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    .container {
+    .container li {
+        list-style-type: none;
 
     }
 
@@ -91,12 +94,102 @@ body {
         margin-bottom: 30px;
     }
     /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
+    /* .jumbotron {
         margin-right: auto;
         margin-left: auto;
-        max-width: 750px;
+        max-width: 700px;
         border-bottom: 0;
         background: #0B173B;
-        font-color: #A4A4A4;
+        h1 {
+            color: #A4A4A4;
+        }
+        p {
+            color: #A4A4A4;
+        }
+    }*/
+}
+
+.contentChoices {
+    img {
+        width: 75%;
+        height: 50%;
+    }
+    .btn {
+        background-color: #f4730d;
+    }
+    .col-md-4 {
+        margin: 0 auto;
+    }
+    .col-md-8 {
+        margin: 0 auto;
     }
 }
+
+.nextButton {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.scaffolds {
+    border: 2px solid #A4A4A4;
+    border-top: 0;
+    border-radius: 10px;
+    background-color: #0B173B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.jsFrameworks {
+    border: 2px solid #A4A4A4;
+    border-top: 0;
+    background-color: #0B173B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hosting {
+    border: 2px solid #A4A4A4;
+    border-top: 0;
+    background-color: #0B173B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.miscTools {
+    border: 2px solid #A4A4A4;
+    border-top: 0;
+    background-color: #0B173B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
