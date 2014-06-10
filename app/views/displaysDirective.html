@@ -2,10 +2,19 @@
 	<div class="scaffolds">
 		<ul>
 			<li class="row" ng-repeat="item in scaffoldThings">
-				<div class="col-md-4"> <img src="{{item.image}}"></div>
+				<div class="col-md-4"> 
+					<img ng-src="{{item.image}}">
+					<div class="gitBadge">
+						<iframe ng-src="{{trustWatch(item.watch)}}" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe> 
+						<br>
+						<iframe ng-src="{{trustFork(item.fork)}}" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe> 
+						<br>
+					</div>
+					
+				</div>
 				<div class="col-md-8">
 					<ul>
-						<li>{{item.name}}</li>
+						<li>{{item.displayName}}</li>
 						<li><a ng-href="{{item.link}}">Check their site.</a></li>
 						<li>{{item.description}}</li>
 					</ul>
@@ -18,10 +27,18 @@
 	<div class="jsFrameworks">
 		<ul>
 			<li class="row" ng-repeat="item in jsThings">
-				<div class="col-md-4"> <img src="{{item.image}}"></div>
+				<div class="col-md-4"> 
+					<img src="{{item.image}}">
+					<div class="gitBadge">
+						<iframe ng-src="{{trustWatch(item.watch)}}" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe> 
+						<br>
+						<iframe ng-src="{{trustFork(item.fork)}}" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe> 
+						<br>
+					</div>
+				</div>
 				<div class="col-md-8">
 					<ul>
-						<li>{{item.name}}</li>
+						<li>{{item.displayName}}</li>
 						<li><a ng-href="{{item.link}}">Check their site.</a></li>
 						<li>{{item.description}}</li>
 					</ul>
@@ -34,10 +51,18 @@
 	<div class="hosting">
 		<ul>
 			<li class="row" ng-repeat="item in hostingThings">
-				<div class="col-md-4"> <img src="{{item.image}}"></div>
+				<div class="col-md-4"> 
+					<img src="{{item.image}}">
+					<div class="gitBadge">
+						<iframe ng-src="{{trustWatch(item.watch)}}" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe> 
+						<br>
+						<iframe ng-src="{{trustFork(item.fork)}}" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe> 
+						<br>
+					</div>
+				</div>
 				<div class="col-md-8">
 					<ul>
-						<li>{{item.name}}</li>
+						<li>{{item.displayName}}</li>
 						<li><a ng-href="{{item.link}}">Check their site.</a></li>
 						<li>{{item.description}}</li>
 					</ul>
@@ -50,10 +75,19 @@
 	<div class="miscTools">
 		<ul>
 			<li class="row" ng-repeat="item in miscThings">
-				<div class="col-md-4"> <img src="{{item.image}}"></div>
+				<div class="col-md-4"> 
+					<img src="{{item.image}}">
+					<div class="gitBadge">
+						<iframe ng-src="{{trustWatch(item.watch)}}" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe> 
+						<br>
+						<iframe ng-src="{{trustFork(item.fork)}}" allowtransparency="true" frameborder="0" scrolling="0" width="115" height="20"></iframe> 
+						<br>
+					</div>
+					
+				</div>
 				<div class="col-md-8">
 					<ul>
-						<li>{{item.name}}</li>
+						<li>{{item.displayName}}</li>
 						<li><a ng-href="{{item.link}}">Check their site.</a></li>
 						<li>{{item.description}}</li>
 					</ul>

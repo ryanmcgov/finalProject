@@ -23,7 +23,13 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+    })
+  .config(function ($sceDelegateProvider) {
+    $sceDelegateProvider.resourceUrlWhitelist([
+      'self',
+       // Allow loading from our assets domain.  Notice the difference between * and **.
+       'http://ghbtns.com/github-btn.html/**']);
+     });
 
 angular.module('whatNext.directives', [
   'firebase',

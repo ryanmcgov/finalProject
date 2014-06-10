@@ -118,10 +118,14 @@ body {
         background-color: #f4730d;
     }
     .col-md-4 {
-        margin: 0 auto;
+        margin: 10px auto;
     }
     .col-md-8 {
-        margin: 0 auto;
+        margin: 10px auto;
+    }
+    ul {
+        padding: 0;
+        margin: 10px;
     }
 }
 
@@ -144,6 +148,7 @@ body {
 .jsFrameworks {
     border: 2px solid #A4A4A4;
     border-top: 0;
+    border-radius: 10px;
     background-color: #0B173B;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -152,6 +157,7 @@ body {
 .hosting {
     border: 2px solid #A4A4A4;
     border-top: 0;
+    border-radius: 10px;
     background-color: #0B173B;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -160,10 +166,27 @@ body {
 .miscTools {
     border: 2px solid #A4A4A4;
     border-top: 0;
+    border-radius: 10px;
     background-color: #0B173B;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #A4A4A4;
+    border-radius: 10px;
+}
+
+.gitBadge {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 
 

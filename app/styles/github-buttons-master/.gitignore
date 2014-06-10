@@ -1,0 +1,20 @@
+# ALWAYS IGNORE
+# -------------
+
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+.ruby-version
+
+
+# OS & EDITOR FOLDERS
+# -------------------
+
+.DS_Store
+thumbs.db
