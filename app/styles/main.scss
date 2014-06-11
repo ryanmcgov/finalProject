@@ -64,6 +64,7 @@ body {
     background: #0B173B;
     h1 {
         color: #A4A4A4;
+        font-family: "Cuprum", sans-serif;
     }
     p {
         color: #A4A4A4;
@@ -111,8 +112,8 @@ body {
 
 .contentChoices {
     img {
-        width: 75%;
-        height: 50%;
+        width: 50%;
+        height: 25%;
     }
     .btn {
         background-color: #f4730d;
@@ -126,6 +127,21 @@ body {
     ul {
         padding: 0;
         margin: 10px;
+    }
+    p {
+        color: #A4A4A4;
+        font-family: "Source Sans Pro", sans-serif;
+    }
+    a > p {
+        font-style: italic;
+    }
+    h1 {
+        color: #A4A4A4;
+        font-family: "PT Sans Caption", sans-serif;
+        text-decoration: underline;
+        text-indent: 15%;
+        font-variant: small-caps;
+        font-weight: 500;
     }
 }
 
@@ -186,6 +202,26 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.well {
+    margin: 0 auto;
+    max-width: 40%;
+    text-align: center;
+    border-bottom: 2px solid #A4A4A4;
+    border-top: 2px solid #A4A4A4;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 10px;
+    background: #0B173B;
+    p {
+        color: #A4A4A4;
+        font-family: "Source Sans Pro", sans-serif;
+        font-style: italic;
+        margin: 0 auto;
+    }
+}
+
+
 
 
 

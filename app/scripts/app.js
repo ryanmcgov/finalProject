@@ -35,5 +35,6 @@ angular.module('whatNext.directives', [
   'firebase',
   'angularfire.firebase',
   'angularfire.login',
-  'simpleLoginTools'
+  'simpleLoginTools',
+  'ui.bootstrap'
 ]);

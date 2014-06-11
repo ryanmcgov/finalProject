@@ -2,6 +2,8 @@
 
 angular.module('whatNext')
   .controller('MainCtrl', function ($scope, $sce) {
+
+    //allows github widget links in the iFrames
     $scope.trustWatch = function(watch) {
     return $sce.trustAsResourceUrl(watch);
     };
@@ -174,4 +176,11 @@ angular.module('whatNext')
       		description: 'Bootstrap components written in pure AngularJS by the AngularUI Team'
       	}
     ];
+  })
+  .controller('CollapseCtrl', function ($scope){
+      $scope.isCollapsed = false;
+  })
+  .controller('AccordianCtrl', function ($scope){
+      $scope.oneAtATime = true;
   });
+
