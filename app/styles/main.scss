@@ -57,12 +57,14 @@ body {
     text-align: center;
     border: 2px solid #A4A4A4;
     font-color: #A4A4A4;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 700px;
+    margin: 0 auto;
+    max-height: 360px;
+    padding: 0px;
+    max-width: 625px;
     border-bottom: 0;
     background: #0B173B;
     h1 {
+        margin: 0 auto;
         color: #A4A4A4;
         font-family: "Cuprum", sans-serif;
     }
@@ -111,9 +113,28 @@ body {
 }
 
 .contentChoices {
+    max-width: 75%;
     img {
         width: 50%;
         height: 25%;
+    }
+    .nav-tabs {
+        margin: 0 auto;
+        background: #0B173B;
+        border-bottom: 0;
+        border-radius: 4px;
+        li {
+        border: 2px solid #A4A4A4;
+        border-top: 0;
+        border-bottom: 0;
+        border-radius: 4px;
+        padding: 0;
+        }
+        .nav-justified > li > a {
+            font-family: "PT Sans Caption", sans-serif;
+            border: 0;
+            padding: 0;
+        }
     }
     .btn {
         background-color: #f4730d;
@@ -218,6 +239,9 @@ body {
         font-family: "Source Sans Pro", sans-serif;
         font-style: italic;
         margin: 0 auto;
+    }
+    .glyphicon {
+        color: yellow;
     }
 }
 

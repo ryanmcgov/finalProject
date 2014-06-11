@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('whatNext')
-  .controller('MainCtrl', function ($scope, $sce) {
+  .controller('MainCtrl', function ($scope, $sce, $firebase) {
 
     //allows github widget links in the iFrames
     $scope.trustWatch = function(watch) {
@@ -14,6 +14,7 @@ angular.module('whatNext')
     return $sce.trustAsResourceUrl(follow);
     };
 
+    //hardcoded data to populate the app
     $scope.scaffoldThings = [
       	{
       		displayName: 'Yeoman',

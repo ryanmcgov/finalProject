@@ -7,6 +7,10 @@ angular
     'ngSanitize',
     'ngRoute',
     'ui.bootstrap',
+    'firebase',
+    'angularfire.firebase',
+    'angularfire.login',
+    'simpleLoginTools',
     'whatNext.directives'
   ])
   .config(function ($routeProvider) {
@@ -28,7 +32,9 @@ angular
     $sceDelegateProvider.resourceUrlWhitelist([
       'self',
        // Allow loading from our assets domain.  Notice the difference between * and **.
-       'http://ghbtns.com/github-btn.html/**']);
+       'http://ghbtns.com/github-btn.html/**',
+       'https://whatnext.firebaseapp.com/#/'
+       ]);
      });
 
 angular.module('whatNext.directives', [
