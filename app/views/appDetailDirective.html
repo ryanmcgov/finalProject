@@ -1,7 +1,17 @@
 <div class="detailDisplay">
 	<ul>
 		<li>
+			<h4>App Name - {{appName}}</h2>
 			<input type="text" ng-model="appName" placeholder="Your App's Name?">
+		</li>
+		<li ng-controller="DateCtrl">
+			<h4>Est. Completion - {{dt | date:"shortDate"}}</h2>
+			<p class="input-group">
+              <input type="text" class="form-control" datepicker-popup="dd-MMMM-yyyy" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
 		</li>
 	</ul>
 </div>

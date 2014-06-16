@@ -234,7 +234,7 @@ body {
     margin-bottom: 10px;
     cursor: pointer;
     position: fixed;
-    right: 10px;
+    left: 10px;
     top: 254px;
     width: 265px;
     .detailDisplay {
@@ -246,8 +246,18 @@ body {
         padding: 0;
     }
     li {
-        margin: 0 auto;
+        margin: 10px auto;
         max-width: 80%;
+    }
+    .dropdown-menu {
+        width: 325px;
+        position: fixed;
+        left: 250px !important;
+        top: 425px !important;
+    }
+    h4 {
+        color: #A4A4A4;
+        font-family: "Cuprum", sans-serif;
     }
 }
 
