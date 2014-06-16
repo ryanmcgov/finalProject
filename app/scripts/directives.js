@@ -5,4 +5,10 @@ angular.module('whatNext.directives')
 			templateUrl: 'views/displaysDirective.html'
 		};
 
+	})
+	.directive('appinfo', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'views/appDetailDirective.html'
+		};
 	});

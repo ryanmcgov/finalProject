@@ -96,24 +96,12 @@ body {
     .header {
         margin-bottom: 30px;
     }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    /* .jumbotron {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 700px;
-        border-bottom: 0;
-        background: #0B173B;
-        h1 {
-            color: #A4A4A4;
-        }
-        p {
-            color: #A4A4A4;
-        }
-    }*/
 }
 
 .contentChoices {
     max-width: 75%;
+    cursor: pointer;
+    margin: 0 auto;
     img {
         width: 50%;
         height: 25%;
@@ -164,13 +152,10 @@ body {
         font-variant: small-caps;
         font-weight: 500;
     }
-}
-
-.nextButton {
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    .gitBadge {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 .scaffolds {
@@ -219,11 +204,6 @@ body {
     border-radius: 10px;
 }
 
-.gitBadge {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .well {
     margin: 0 auto;
     max-width: 40%;
@@ -244,6 +224,36 @@ body {
         color: yellow;
     }
 }
+
+.appDetails {
+    border: 2px solid #A4A4A4;
+    border-top: 0;
+    border-radius: 10px;
+    background-color: #0B173B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    top: 254px;
+    width: 265px;
+    .detailDisplay {
+        padding: 0;
+        max-width: 85%;
+        margin: 5px auto 5px auto;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+}
+
+
+
+
 
 
 
