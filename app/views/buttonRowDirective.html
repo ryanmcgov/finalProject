@@ -1,0 +1,14 @@
+<div>
+	<ul>
+		<li>
+			<span class="glyphicon glyphicon-pushpin"></span>
+		</li>
+		<li ng-controller="CollapseCtrl" >
+			<span class="glyphicon glyphicon-link" ng-click="isCollapsed = !isCollapsed"></span>
+			<div collapse="!isCollapsed">
+				<div>Some content</div> 
+			</div>
+		</li>
+		<li></li>
+	</ul>
+</div>

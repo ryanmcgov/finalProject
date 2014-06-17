@@ -104,7 +104,7 @@ angular.module('whatNext')
           follow: 'http://ghbtns.com/github-btn.html?user=angular&type=follow&count=true',
       		image: 'https://angularjs.org/img/AngularJS-large.png',
       		link: 'https://angularjs.org/',
-      		description: 'HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop'
+      		description: 'HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.'
       	}
     ];
     $scope.hostingThings = [
@@ -174,7 +174,7 @@ angular.module('whatNext')
           follow: 'http://ghbtns.com/github-btn.html?user=angular-ui&type=follow&count=true',
       		image: 'http://blog.getbootstrap.com/public/ico/apple-touch-icon-144-precomposed.png',
       		link: 'http://angular-ui.github.io/bootstrap/',
-      		description: 'Bootstrap components written in pure AngularJS by the AngularUI Team'
+      		description: 'Bootstrap components written in pure AngularJS by the AngularUI Team.'
       	}
     ];
   })

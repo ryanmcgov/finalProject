@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularfire.firebase', ['firebase'])
+angular.module('whatNext.firebase', ['firebase'])
 
   // A quick wrapper to abstract creating Firebase references
   .factory('firebaseRef', function (Firebase, FBURL) {

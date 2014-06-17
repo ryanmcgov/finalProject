@@ -11,4 +11,10 @@ angular.module('whatNext.directives')
 			restrict: 'E',
 			templateUrl: 'views/appDetailDirective.html'
 		};
+	})
+	.directive('buttonrow', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'views/buttonRowDirective.html'
+		};
 	});
