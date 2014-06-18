@@ -2,6 +2,24 @@
 
 angular.module('whatNext')
   .controller('MainCtrl', function ($scope, $sce, $firebase) {
+    //Firebase API
+    var projectRef = new Firebase("https://whatnext.firebaseio.com/projects/");
+    $scope.projects = $firebase(projectRef);
+        //console.log(projectRef.name());
+    var projectName = projectRef.name();
+
+
+    //adds a project
+    $scope.addProject = function() {
+      projects.$child(newApp).$add( {
+        appName: $scope.appName,
+        dateEst: $scope.dt,
+        scaffold: $scope.scaffoldName,
+        jsTool: $scope.jsName,
+        database: $scope.dbName,
+        misc: $scope.miscName
+      });
+    };
 
     //allows github widget links in the iFrames
     $scope.trustWatch = function(watch) {
@@ -12,6 +30,21 @@ angular.module('whatNext')
     };
     $scope.trustFollow = function(follow) {
     return $sce.trustAsResourceUrl(follow);
+    };
+
+    //calendar
+    $scope.today = function() {
+      $scope.dt = new Date();
+    };
+    $scope.today();
+    $scope.clear = function () {
+      $scope.dt = null;
+    };
+    $scope.open = function($event) {
+      $event.preventDefault();
+      $event.stopPropagation();
+
+      $scope.opened = true;
     };
 
     //hardcoded data to populate the app
@@ -177,24 +210,6 @@ angular.module('whatNext')
       		description: 'Bootstrap components written in pure AngularJS by the AngularUI Team.'
       	}
     ];
-  })
-  .controller('DateCtrl', function ($scope) {
-      $scope.today = function() {
-        $scope.dt = new Date();
-      };
-      $scope.today();
-
-      $scope.clear = function () {
-        $scope.dt = null;
-      };
-
-      $scope.open = function($event) {
-        $event.preventDefault();
-        $event.stopPropagation();
-
-        $scope.opened = true;
-      };
-
   })
   .controller('CollapseCtrl', function ($scope){
       $scope.isCollapsed = false;

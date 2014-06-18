@@ -17,4 +17,10 @@ angular.module('whatNext.directives')
 			restrict: 'E',
 			templateUrl: 'views/buttonRowDirective.html'
 		};
+	})
+	.directive('recents', function() {
+		return {
+			restict: 'E',
+			templateUrl: 'views/recentProjDirective.html'
+		}
 	});

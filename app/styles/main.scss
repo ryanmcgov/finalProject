@@ -71,8 +71,9 @@ body {
         font-weight: 700;
     }
     p {
+        height: 195px;
         color: #A4A4A4;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: "Cuprum", sans-serif;
         font-variant: small-caps;
     }
 }
@@ -123,6 +124,7 @@ body {
         padding: 0;
         }
         .nav-justified > li > a {
+            color: #A4A4A4;
             font-family: "PT Sans Caption", sans-serif;
             font-variant: small-caps;
             border: 0;
@@ -142,6 +144,14 @@ body {
         padding: 0;
         margin: 10px;
     }
+    a {
+        color: #A4A4A4;
+        font-family: "PT Sans Caption", sans-serif;
+        font-variant: small-caps;
+    }
+    a:hover {
+        color: #555;
+    }
     p {
         color: #A4A4A4;
         font-family: "PT Sans Caption", sans-serif;
@@ -152,9 +162,9 @@ body {
     }
     h1 {
         color: #A4A4A4;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Indie Flower', cursive;
         text-decoration: underline;
-        text-indent: 15%;
+        //text-indent: 35%;
         font-variant: small-caps;
         font-weight: 500;
     }
@@ -257,10 +267,11 @@ body {
         max-width: 80%;
     }
     .dropdown-menu {
+        color: white;
         width: 325px;
         position: fixed;
         left: 250px !important;
-        top: 375px !important;
+        top: 100px !important;
     }
     h4 {
         color: #A4A4A4;

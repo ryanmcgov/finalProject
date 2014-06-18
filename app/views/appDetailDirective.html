@@ -1,17 +1,36 @@
 <div class="detailDisplay">
 	<ul>
 		<li>
-			<h4>App Name - {{appName}}</h2>
+			<h4>App Name - {{appName}}</h4>
 			<input type="text" ng-model="appName" placeholder="Your App's Name?">
 		</li>
-		<li ng-controller="DateCtrl">
-			<h4>Est. Completion - {{dt | date:"shortDate"}}</h2>
+		<li>
+			<h4>Est. Completion - {{dt | date:"shortDate"}}</h4>
 			<p class="input-group">
               <input type="text" class="form-control" datepicker-popup="dd-MMMM-yyyy" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
               <span class="input-group-btn">
                 <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
               </span>
             </p>
+		</li>
+		<li>
+			<h4>Scaffolding:</h4>
+			<select ng-model="scaffoldName" ng-options="item as item.displayName for item in scaffoldThings"></select>
+		</li>
+		<li>
+			<h4>Javascript Tools:</h4>
+			<select ng-model="jsName" ng-options="item as item.displayName for item in jsThings"></select>
+		</li>
+		<li>
+			<h4>Databases:</h4>
+			<select ng-model="dbName" ng-options="item as item.displayName for item in hostingThings"></select>
+		</li>
+		<li>
+			<h4>Miscellaneous:</h4>
+			<select ng-model="miscName" ng-options="item as item.displayName for item in miscThings"></select>
+		</li>
+		<li>
+			<button type="submit" ng-click="addProject()">Create Project</button>
 		</li>
 	</ul>
 </div>

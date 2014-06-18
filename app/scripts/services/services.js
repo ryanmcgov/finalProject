@@ -6,4 +6,15 @@ angular.module('whatNext')
 				isArray: true
 			}
 		});
-	});
+	})
+	.factory('Projects', function($firebase, FBURL) {
+		var projects = $firebase(FBURL + 'projects');
+		var projectId = 
+
+		var Projects = {
+			all: projects,
+			find: 
+		}
+
+
+	})
