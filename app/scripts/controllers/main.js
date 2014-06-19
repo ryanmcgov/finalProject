@@ -10,12 +10,14 @@ angular.module('whatNext')
     $scope.addProject = function() {
       var projectName = $scope.appName;
       $scope.allProjects.$child(projectName).$set( {
+        name: $scope.appName,
         dateEst: $scope.dt,
         scaffold: $scope.scaffoldName,
         jsTool: $scope.jsName,
         database: $scope.dbName,
         misc: $scope.miscName
       });
+      //return $scope.allProjects;
       $location.path('#/');
     };
 
