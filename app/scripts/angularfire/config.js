@@ -14,4 +14,4 @@ angular.module('whatNext.directives')
   .constant('loginProviders', 'facebook,twitter,password')
 
   // your Firebase URL goes here
-  .constant('FBURL', 'https://whatnext.firebaseio.com');
+  .constant('FBURL', 'https://whatnext.firebaseio.com/projects');

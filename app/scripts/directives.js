@@ -22,5 +22,5 @@ angular.module('whatNext.directives')
 		return {
 			restict: 'E',
 			templateUrl: 'views/recentProjDirective.html'
-		}
+		};
 	});

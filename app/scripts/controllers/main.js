@@ -1,25 +1,28 @@
 'use strict';
 
 angular.module('whatNext')
-  .controller('MainCtrl', function ($scope, $sce, $firebase) {
+  .controller('MainCtrl', ['$scope', '$sce', '$firebase', '$location', 'FBURL', 'getProjects', function ($scope, $sce, $firebase, $location, FBURL, getProjects) {
     //Firebase API
-    var projectRef = new Firebase("https://whatnext.firebaseio.com/projects/");
-    $scope.projects = $firebase(projectRef);
-        //console.log(projectRef.name());
-    var projectName = projectRef.name();
-
-
+    $scope.allProjects = $firebase(new Firebase(FBURL));
+    
+    
     //adds a project
     $scope.addProject = function() {
-      projects.$child(newApp).$add( {
-        appName: $scope.appName,
+      var projectName = $scope.appName;
+      $scope.allProjects.$child(projectName).$set( {
         dateEst: $scope.dt,
         scaffold: $scope.scaffoldName,
         jsTool: $scope.jsName,
         database: $scope.dbName,
         misc: $scope.miscName
       });
+      $location.path('#/');
     };
+
+    /*var keys = $scope.allProjects.$getIndex();
+    keys.forEach(function(key, i) {
+      console.log(i, $scope.items[key]); // Prints items in order they appear in Firebase.
+    });*/
 
     //allows github widget links in the iFrames
     $scope.trustWatch = function(watch) {
@@ -210,7 +213,7 @@ angular.module('whatNext')
       		description: 'Bootstrap components written in pure AngularJS by the AngularUI Team.'
       	}
     ];
-  })
+  }])
   .controller('CollapseCtrl', function ($scope){
       $scope.isCollapsed = false;
   })

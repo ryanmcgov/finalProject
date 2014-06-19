@@ -7,14 +7,13 @@ angular.module('whatNext')
 			}
 		});
 	})
-	.factory('Projects', function($firebase, FBURL) {
-		var projects = $firebase(FBURL + 'projects');
-		var projectId = 
+	.factory('getProjects', ['$firebase', 'FBURL', function($firebase, FBURL) {
+			var ref = new Firebase(FBURL);
+			var allProjects = $firebase(ref);
 
-		var Projects = {
-			all: projects,
-			find: 
-		}
+			var getAllProjects = function() {
+				return allProjects;
+			};
+		
 
-
-	})
+	}]);
