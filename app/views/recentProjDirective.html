@@ -1,10 +1,5 @@
-<div ng-repeat="project in allProjects | orderByPriority">
+<div ng-controller="MainCtrl" ng-repeat="project in allProjects | orderByPriority">
 	<ul>
-		<li>{{project}}</li>
-		<li>{{projectName.dateEst}}</li>
-		<li>{{projectName.scaffold}}</li>
-		<li>{{projectName.jsTool}}</li>
-		<li>{{projectName.database}}</li>
-		<li>{{projectName.misc}}</li>
+		<li>{{project.scaffold.name}}</li>
 	</ul>
 </div>

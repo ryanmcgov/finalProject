@@ -17,7 +17,8 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 body {
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #1C1C1C;
+    background: url("http://subtlepatterns.com/patterns/bo_play_pattern.png");
+    background-repeat: repeat;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -56,7 +57,7 @@ body {
 .jumbotron {
     text-align: center;
     border: 2px solid #A4A4A4;
-    font-color: #A4A4A4;
+    font-color: #17B3D4;
     margin: 0 auto;
     //max-height: 375px;
     padding: 0px;
@@ -65,15 +66,15 @@ body {
     background: #660000;
     h1 {
         margin: 15px auto;
-        color: #A4A4A4;
-        font-family: 'Indie Flower', cursive;
+        color: #17B3D4;
+        font-family: 'Electrolize', sans-serif;
         font-variant: small-caps;
         font-weight: 700;
     }
     p {
         height: 195px;
         color: #A4A4A4;
-        font-family: "Cuprum", sans-serif;
+        font-family: 'Electrolize', sans-serif;
         font-variant: small-caps;
     }
 }
@@ -161,8 +162,8 @@ body {
         font-style: italic;
     }
     h1 {
-        color: #A4A4A4;
-        font-family: 'Indie Flower', cursive;
+        color: #17B3D4;
+        font-family: 'Electrolize', sans-serif;
         text-decoration: underline;
         //text-indent: 35%;
         font-variant: small-caps;
@@ -278,8 +279,17 @@ body {
     }
     h4 {
         color: #A4A4A4;
-        font-family: "Cuprum", sans-serif;
+        font-family: 'Electrolize', sans-serif;
         font-variant: small-caps;
+    }
+    h1 {
+        margin: 5 auto;
+        color: #17B3D4;
+        font-family: 'Electrolize', sans-serif;
+        text-decoration: underline;
+        //text-indent: 35%;
+        font-variant: small-caps;
+        font-weight: 500;
     }
 }
 

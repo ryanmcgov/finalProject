@@ -9,7 +9,7 @@ angular.module('whatNext')
     //adds a project
     $scope.addProject = function() {
       var projectName = $scope.appName;
-      $scope.allProjects.$child(projectName).$set( {
+      $scope.allProjects.$child(projectName).set( {
         name: $scope.appName,
         dateEst: $scope.dt,
         scaffold: $scope.scaffoldName,
@@ -17,7 +17,7 @@ angular.module('whatNext')
         database: $scope.dbName,
         misc: $scope.miscName
       });
-      //return $scope.allProjects;
+      return $scope.allProjects;
       $location.path('#/');
     };
 
@@ -50,6 +50,13 @@ angular.module('whatNext')
       $event.stopPropagation();
 
       $scope.opened = true;
+    };
+
+    //accordion control
+    $scope.oneAtATime = true;
+    $scope.status = {
+      isFirstOpen: true,
+      isFirstDisabled: false
     };
 
     //hardcoded data to populate the app
@@ -218,8 +225,5 @@ angular.module('whatNext')
   }])
   .controller('CollapseCtrl', function ($scope){
       $scope.isCollapsed = false;
-  })
-  .controller('AccordianCtrl', function ($scope){
-      $scope.oneAtATime = true;
   });
 
